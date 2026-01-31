@@ -30,7 +30,7 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-primary transition-colors">Beranda</Link></li>
               <li><Link to="/layanan" className="hover:text-primary transition-colors">Layanan</Link></li>
               <li><Link to="/tentang" className="hover:text-primary transition-colors">Tentang Kami</Link></li>
-              <li><Link to="/tim" className="hover:text-primary transition-colors">Tim Medis</Link></li>
+              <li><Link to="/syarat-berkas" className="hover:text-primary transition-colors">Syarat Berkas</Link></li>
               <li><Link to="/kontak" className="hover:text-primary transition-colors">Kontak</Link></li>
             </ul>
           </div>
@@ -42,7 +42,7 @@ const Footer = () => {
               <li>Pemeriksaan Umum</li>
               <li>Kesehatan Ibu & Anak</li>
               <li>Imunisasi</li>
-              <li>Program Posbindu</li>
+              <li>Program Posyandu</li>
               <li>Konsultasi Kesehatan</li>
             </ul>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
             <ul className="space-y-3 text-card/70 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Jl. Kesehatan No. 01, Desa Sejahtera</span>
+                <span>Ds.Wiloso, Jl. Wiloso Gondowangi, RT.20/RW.04, Poh Bener, Gondowangi, Kec. Wagir, Kabupaten Malang, Jawa Timur 65158</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
@@ -69,12 +69,9 @@ const Footer = () => {
 
         {/* Divider */}
         <div className="border-t border-card/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-card/70 text-sm text-center md:text-left">
-              © {currentYear} Ponkesdes. Seluruh hak cipta dilindungi.
-            </p>
-            <p className="text-card/70 text-sm flex items-center gap-1">
-              Dibuat dengan <Heart className="w-4 h-4 text-accent" /> untuk kesehatan masyarakat
+          <div className="flex justify-center items-center gap-4">
+            <p className="text-card/70 text-sm text-center">
+              © {currentYear} KKN 10 - Wiloso - Gondowangi - Universitas Merdeka Malang
             </p>
           </div>
         </div>

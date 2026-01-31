@@ -3,13 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-ponkesdes.jpg";
 
-const Beranda = () => {
-  const stats = [
-    { icon: Heart, value: "1000+", label: "Pasien Dilayani" },
-    { icon: Users, value: "5+", label: "Tenaga Medis" },
-    { icon: Clock, value: "10+", label: "Tahun Melayani" },
-  ];
+const stats = [
 
+];
+
+const Beranda = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero pt-20">
       {/* Background Pattern */}
@@ -33,7 +31,7 @@ const Beranda = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-              Ponkesdes hadir memberikan layanan kesehatan dasar yang berkualitas untuk seluruh 
+              Ponkesdes hadir memberikan layanan kesehatan dasar yang berkualitas untuk seluruh
               masyarakat desa. Kami berkomitmen menjadi mitra kesehatan keluarga Anda.
             </p>
 
@@ -73,7 +71,7 @@ const Beranda = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
             </div>
-            
+
             {/* Floating Card */}
             <div className="absolute -bottom-6 -left-6 bg-card rounded-2xl p-4 shadow-card animate-float hidden md:block">
               <div className="flex items-center gap-3">

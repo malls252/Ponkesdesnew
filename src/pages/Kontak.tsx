@@ -61,7 +61,7 @@ const Kontak = () => {
             {/* Contact Info */}
             <div className="space-y-6 animate-slide-in-left">
               <h2 className="text-2xl font-bold text-foreground mb-6">Informasi Kontak</h2>
-              
+
               {contactInfo.map((info, index) => (
                 <div
                   key={index}
@@ -87,7 +87,7 @@ const Kontak = () => {
               {/* Map */}
               <div className="mt-8 bg-card rounded-2xl overflow-hidden shadow-card border border-border/50 h-64">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.29279726093!2d112.61454545!3d-7.275358750000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Kota%20SBY%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1704067200000!5m2!1sid!2sid"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.92682669924784!2d112.58034965643901!3d-8.016539527906241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e789d25a20780b9%3A0x775a4a74cb8989e!2sTaman%20Kanak%20Kanak%20Dharma%20Wanita%20-%2002!5e0!3m2!1sid!2sid!4v1769871884902!5m2!1sid!2sid"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

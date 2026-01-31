@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 import Index from "./pages/Index";
 import Layanan from "./pages/Layanan";
 import Tentang from "./pages/Tentang";
-import Tim from "./pages/Tim";
+import SyaratBerkas from "./pages/SyaratBerkas";
 import Kontak from "./pages/Kontak";
 import NotFound from "./pages/NotFound";
 
@@ -23,7 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/layanan" element={<Layout><Layanan /></Layout>} />
           <Route path="/tentang" element={<Layout><Tentang /></Layout>} />
-          <Route path="/tim" element={<Layout><Tim /></Layout>} />
+          <Route path="/syarat-berkas" element={<Layout><SyaratBerkas /></Layout>} />
           <Route path="/kontak" element={<Layout><Kontak /></Layout>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

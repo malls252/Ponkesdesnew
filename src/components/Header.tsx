@@ -11,7 +11,7 @@ const Header = () => {
     { href: "/", label: "Beranda" },
     { href: "/layanan", label: "Layanan" },
     { href: "/tentang", label: "Tentang Kami" },
-    { href: "/tim", label: "Tim Medis" },
+    { href: "/syarat-berkas", label: "Syarat Berkas" },
     { href: "/kontak", label: "Kontak" },
   ];
 
@@ -40,11 +40,10 @@ const Header = () => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`font-medium transition-colors duration-200 ${
-                  isActive(link.href) 
-                    ? "text-primary" 
-                    : "text-muted-foreground hover:text-primary"
-                }`}
+                className={`font-medium transition-colors duration-200 ${isActive(link.href)
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-primary"
+                  }`}
               >
                 {link.label}
               </Link>
@@ -79,11 +78,10 @@ const Header = () => {
                   key={link.href}
                   to={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
-                    isActive(link.href)
-                      ? "text-primary bg-secondary"
-                      : "text-muted-foreground hover:text-primary hover:bg-secondary"
-                  }`}
+                  className={`px-4 py-3 rounded-lg font-medium transition-all duration-200 ${isActive(link.href)
+                    ? "text-primary bg-secondary"
+                    : "text-muted-foreground hover:text-primary hover:bg-secondary"
+                    }`}
                 >
                   {link.label}
                 </Link>

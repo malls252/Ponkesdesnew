@@ -1,4 +1,7 @@
 import { CheckCircle, Target, Eye, Award, Users, Heart } from "lucide-react";
+import nurseImage from "@/assets/nurse-1.jpg";
+import doctorImage from "@/assets/doctor-1.jpg";
+import bidanImage from "@/assets/bidan-1.jpg";
 
 const Tentang = () => {
   const features = [
@@ -10,11 +13,24 @@ const Tentang = () => {
     "Jam operasional yang fleksibel",
   ];
 
-  const achievements = [
-    { icon: Users, value: "1000+", label: "Pasien Terlayani" },
-    { icon: Award, value: "10+", label: "Tahun Pengalaman" },
-    { icon: Heart, value: "5+", label: "Tenaga Medis" },
+  const team = [
+    {
+      name: "dr. Ahmad Wijaya",
+      role: "Dokter Umum",
+      image: doctorImage,
+    },
+    {
+      name: "Siti Nurhaliza, Amd.Keb",
+      role: "Bidan Desa",
+      image: bidanImage,
+    },
+    {
+      name: "Dewi Kartika, Amd.Kep",
+      role: "Perawat",
+      image: nurseImage,
+    },
   ];
+
 
   return (
     <div className="pt-20 min-h-screen bg-background">
@@ -29,7 +45,7 @@ const Tentang = () => {
               Mitra Kesehatan <span className="text-gradient">Keluarga Anda</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Ponkesdes hadir untuk memberikan pelayanan kesehatan dasar yang berkualitas 
+              Ponkesdes hadir untuk memberikan pelayanan kesehatan dasar yang berkualitas
               kepada seluruh masyarakat desa.
             </p>
           </div>
@@ -47,12 +63,12 @@ const Tentang = () => {
                   Apa Itu Ponkesdes?
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Ponkesdes (Pondok Kesehatan Desa) adalah fasilitas kesehatan tingkat pertama yang 
-                  didirikan untuk memberikan pelayanan kesehatan dasar kepada masyarakat desa. 
+                  Ponkesdes (Pondok Kesehatan Desa) adalah fasilitas kesehatan tingkat pertama yang
+                  didirikan untuk memberikan pelayanan kesehatan dasar kepada masyarakat desa.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Kami berkomitmen untuk meningkatkan derajat kesehatan masyarakat melalui pelayanan 
-                  yang profesional, ramah, dan terjangkau. Dengan tenaga kesehatan yang berpengalaman 
+                  Kami berkomitmen untuk meningkatkan derajat kesehatan masyarakat melalui pelayanan
+                  yang profesional, ramah, dan terjangkau. Dengan tenaga kesehatan yang berpengalaman
                   dan fasilitas yang memadai, kami siap melayani kebutuhan kesehatan Anda.
                 </p>
               </div>
@@ -69,15 +85,30 @@ const Tentang = () => {
                 </ul>
               </div>
 
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-6 border-t border-border">
-                {achievements.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <span className="block text-2xl md:text-3xl font-bold text-foreground">{stat.value}</span>
-                    <p className="text-sm text-muted-foreground">{stat.label}</p>
-                  </div>
-                ))}
+              {/* Team Section */}
+              <div className="pt-12 border-t border-border">
+                <h3 className="text-xl font-bold text-foreground mb-6">Tim Kesehatan Kami</h3>
+                <div className="grid gap-6 sm:grid-cols-2">
+                  {team.map((member, index) => (
+                    <div
+                      key={index}
+                      className="group bg-card rounded-xl overflow-hidden shadow-soft border border-border/50"
+                    >
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent" />
+                        <div className="absolute bottom-3 left-3 right-3">
+                          <p className="text-white font-semibold text-sm">{member.name}</p>
+                          <p className="text-white/80 text-xs">{member.role}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -91,8 +122,8 @@ const Tentang = () => {
                   <h3 className="text-xl font-bold text-foreground">Visi</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Menjadi fasilitas kesehatan desa yang unggul dalam memberikan pelayanan 
-                  kesehatan dasar yang berkualitas, merata, dan terjangkau untuk seluruh 
+                  Menjadi fasilitas kesehatan desa yang unggul dalam memberikan pelayanan
+                  kesehatan dasar yang berkualitas, merata, dan terjangkau untuk seluruh
                   lapisan masyarakat.
                 </p>
               </div>
@@ -131,8 +162,8 @@ const Tentang = () => {
               <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card border border-border/50">
                 <h3 className="text-xl font-bold text-foreground mb-4">Sejarah Singkat</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Ponkesdes didirikan sebagai upaya pemerintah untuk mendekatkan layanan kesehatan 
-                  kepada masyarakat desa. Dengan fokus pada pelayanan kesehatan dasar, kami telah 
+                  Ponkesdes didirikan sebagai upaya pemerintah untuk mendekatkan layanan kesehatan
+                  kepada masyarakat desa. Dengan fokus pada pelayanan kesehatan dasar, kami telah
                   melayani ribuan pasien dari berbagai kalangan dan usia selama lebih dari satu dekade.
                 </p>
               </div>
