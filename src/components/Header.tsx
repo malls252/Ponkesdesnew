@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone, LogOut } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { branding } from "@/config/branding";
@@ -59,7 +59,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const navLinks = [
-    { href: "/beranda", label: "Beranda" },
+    { href: "/", label: "Beranda" },
     { href: "/layanan", label: "Layanan" },
     { href: "/tentang", label: "Tentang Kami" },
     { href: "/gallery", label: "Galeri" },
@@ -84,7 +84,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/beranda" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             {branding.logo.type === "image" ? (
               <img
                 src={branding.logo.imagePath}
@@ -121,15 +121,6 @@ const Header = () => {
 
           <div className="hidden md:flex items-center gap-4">
             <ContactButtons />
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => navigate("/")}
-              className="rounded-xl border-border/50 hover:bg-destructive hover:text-destructive-foreground transition-all duration-300"
-              title="Keluar"
-            >
-              <LogOut className="w-4 h-4" />
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -162,17 +153,6 @@ const Header = () => {
                 <div className="mb-2">
                   <ContactButtons />
                 </div>
-                <Button
-                  variant="outline"
-                  className="w-full gap-2 border-border/50"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    navigate("/");
-                  }}
-                >
-                  <LogOut className="w-4 h-4" />
-                  Keluar
-                </Button>
               </div>
             </div>
           </nav>
