@@ -16,13 +16,13 @@ const Tentang = () => {
 
   const team = [
     {
-      name: "Ibu Frida",
-      role: "Perawat Desa",
+      name: "Ibu Wayan",
+      role: "Bidan Desa",
       image: bidanImage,
     },
     {
-      name: "Ibu Wayan",
-      role: "Bidan Desa",
+      name: "Ibu Frida",
+      role: "Perawat Desa",
       image: nurseImage,
     },
   ];
@@ -96,19 +96,18 @@ const Tentang = () => {
                   {team.map((member, index) => (
                     <div
                       key={index}
-                      className="group bg-card rounded-xl overflow-hidden shadow-soft border border-border/50"
+                      className="group bg-card rounded-xl overflow-hidden shadow-soft border border-border/50 flex flex-col"
                     >
-                      <div className="relative h-48 overflow-hidden">
+                      <div className="relative overflow-hidden bg-muted flex-shrink-0">
                         <img
                           src={member.image}
                           alt={member.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent" />
-                        <div className="absolute bottom-3 left-3 right-3">
-                          <p className="text-white font-semibold text-sm">{member.name}</p>
-                          <p className="text-white/80 text-xs">{member.role}</p>
-                        </div>
+                      </div>
+                      <div className="p-4 bg-card mt-auto">
+                        <p className="text-foreground font-bold text-base">{member.name}</p>
+                        <p className="text-muted-foreground text-sm">{member.role}</p>
                       </div>
                     </div>
                   ))}
@@ -145,7 +144,7 @@ const Tentang = () => {
               <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card border border-border/50">
                 <h3 className="text-xl font-bold text-foreground mb-4">Tujuan</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                 Menyelenggarakan pelayanan kesehatan yang berkualitas serta meningkatkan kesadaran, kemauan dan kemampuan hidup sehat bagi setiap orang yang bertempat tinggal di desa/kelurahan, agar terwujud derajat kesehatan masyarakat di desa/kelurahan yang setinggi-tingginya.
+                  Menyelenggarakan pelayanan kesehatan yang berkualitas serta meningkatkan kesadaran, kemauan dan kemampuan hidup sehat bagi setiap orang yang bertempat tinggal di desa/kelurahan, agar terwujud derajat kesehatan masyarakat di desa/kelurahan yang setinggi-tingginya.
                 </p>
               </div>
             </div>
