@@ -1,5 +1,6 @@
 import { Heart, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import { brandingfooter } from "@/config/brandingfooter";
 import { branding } from "@/config/branding";
 
 const Footer = () => {
@@ -12,24 +13,24 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-3">
-              {branding.footerLogo.type === "image" ? (
+              {brandingfooter.footerLogo.type === "image" ? (
                 <img
-                  src={branding.footerLogo.imagePath}
-                  alt={branding.name}
+                  src={brandingfooter.footerLogo.imagePath}
+                  alt={brandingfooter.name}
                   className="w-16 h-16 rounded-xl object-contain"
                 />
               ) : (
                 <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-lg">{branding.footerLogo.icon}</span>
+                  <span className="text-primary-foreground font-bold text-lg">{brandingfooter.footerLogo.icon}</span>
                 </div>
               )}
               <div className="flex flex-col">
-                <span className="font-bold text-lg leading-tight">{branding.name}</span>
-                <span className="text-xs text-card/60">{branding.description}</span>
+                <span className="font-bold text-lg leading-tight">{brandingfooter.name}</span>
+                <span className="text-xs text-card/60">{brandingfooter.description}</span>
               </div>
             </Link>
             <p className="text-card/70 text-sm leading-relaxed text-justify">
-              {branding.footerDescription}
+              {brandingfooter.footerDescription}
             </p>
           </div>
 

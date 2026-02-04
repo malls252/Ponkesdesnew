@@ -19,7 +19,7 @@ const DEFAULT_SCHEDULE: ScheduleItem[] = [
     { day: "Kamis", time: "07.30 - 12.00 WIB", service: "Pelayanan Umum + Imunisasi" },
     { day: "Jumat", time: "Tutup", service: "Pelayanan Umum + Posbindu" },
     { day: "Sabtu", time: "07.30 - 11.00 WIB", service: "Pelayanan Umum" },
-    { day: "Minggu", time: "Tutup", service: "-" },
+    { day: "Minggu", time: "Tutup", service: "Libur" },
 ];
 
 

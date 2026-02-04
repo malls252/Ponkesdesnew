@@ -34,7 +34,7 @@ const Kontak = () => {
     { day: "Kamis", time: "07.30 - 12.00 WIB", service: "Pelayanan Klaster 2 dan 3" },
     { day: "Jumat", time: "Tutup", service: "Petugas berkegiatan di puskesmas" },
     { day: "Sabtu", time: "07.30 - 11.00 WIB", service: "Pelayanan Klaster 2 dan 3" },
-    { day: "Minggu", time: "Tutup", service: "Tutup" },
+    { day: "Minggu", time: "Tutup", service: "Libur" },
   ];
 
   return (
