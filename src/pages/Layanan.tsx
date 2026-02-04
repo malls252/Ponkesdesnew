@@ -24,7 +24,6 @@ const Layanan = () => {
         "Pemeriksaan bayi",
         "Pemeriksaan balita",
         "Pemeriksaan remaja",
-        "Pemberian vitamin",
         "Konseling kesehatan ibu dan anak"
       ]
     },
@@ -34,7 +33,6 @@ const Layanan = () => {
       description: "Layanan kesehatan untuk masyarakat usia dewasa hingga lanjut usia.",
       details: [
         "Pemeriksaan kesehatan umu dewasa",
-        "Pemeriksaan tekanan darah",
         "Konsultasi keluhan kesehatan",
         "Pemeriksaan lansia",
         "Edukasi kesehatan"

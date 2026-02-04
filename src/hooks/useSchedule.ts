@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { JSONBIN_CONFIG } from '@/config/jsonbin';
 
 export interface ScheduleItem {
     day: string;
@@ -8,12 +7,12 @@ export interface ScheduleItem {
 }
 
 const DEFAULT_SCHEDULE: ScheduleItem[] = [
-    { day: "Senin", time: "07.00 - 16.00 WIB", service: "Pelayanan Umum" },
-    { day: "Selasa", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum + KIA" },
-    { day: "Rabu", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum" },
-    { day: "Kamis", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum + Imunisasi" },
-    { day: "Jumat", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum + Posbindu" },
-    { day: "Sabtu", time: "08.00 - 12.00 WIB", service: "Pelayanan Umum" },
+    { day: "Senin", time: "07.30 - 12.00 WIB", service: "Pelayanan Umum" },
+    { day: "Selasa", time: "07.30 - 12.00 WIB", service: "Pelayanan Umum + KIA" },
+    { day: "Rabu", time: "07.30 - 12.00 WIB", service: "Pelayanan Umum" },
+    { day: "Kamis", time: "07.30 - 12.00 WIB", service: "Pelayanan Umum + Imunisasi" },
+    { day: "Jumat", time: "Tutup", service: "Pelayanan Umum + Posbindu" },
+    { day: "Sabtu", time: "07.30 - 11.00 WIB", service: "Pelayanan Umum" },
     { day: "Minggu", time: "Tutup", service: "-" },
 ];
 

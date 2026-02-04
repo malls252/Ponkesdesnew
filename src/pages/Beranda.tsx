@@ -93,7 +93,7 @@ const Beranda = () => {
                   />
                   <div>
                     <p className="font-semibold text-foreground">Jam Operasional</p>
-                    <p className="text-sm text-muted-foreground">08.00 - 16.00 WIB</p>
+                    <p className="text-sm text-muted-foreground">07.30 - 12.00 WIB</p>
                   </div>
                 </div>
               </div>
@@ -157,11 +157,7 @@ const Beranda = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="leading-relaxed">Kasus gawat darurat akan selalu didahulukan penanganannya demi keselamatan pasien.</p>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="leading-relaxed">Pendaftaran pasien umum ditutup 30 menit sebelum jam operasional berakhir.</p>
+                    <p className="leading-relaxed">Pendaftaran pasien umum ditutup sesuai jam operasional.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />

@@ -7,8 +7,13 @@ const Kontak = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: "WhatsApp",
-      content: `+${branding.whatsapp}`,
+      title: "Perawat Desa (Ibu Frida)",
+      content: `+${branding.whatsapp[0].number}`,
+    },
+    {
+      icon: Phone,
+      title: "Bidan Desa (Ibu Wayan)",
+      content: `+${branding.whatsapp[1].number}`,
     },
     {
       icon: Mail,
@@ -18,17 +23,17 @@ const Kontak = () => {
     {
       icon: Clock,
       title: "Jam Operasional",
-      content: "Senin - Sabtu: 08.00 - 16.00 WIB",
+      content: "Senin - Sabtu: 07.30 - 12.00 WIB",
     },
   ];
 
   const schedule = [
-    { day: "Senin", time: "07.30 - 16.00 WIB", service: "Pelayanan Umum" },
-    { day: "Selasa", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum + KIA" },
-    { day: "Rabu", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum" },
-    { day: "Kamis", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum + Imunisasi" },
-    { day: "Jumat", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum + Posbindu" },
-    { day: "Sabtu", time: "08.00 - 12.00 WIB", service: "Pelayanan Umum" },
+    { day: "Senin", time: "07.30 - 12.00 WIB", service: "Pelayanan Klaster 2 dan 3" },
+    { day: "Selasa", time: "07.30 - 12.00 WIB", service: "Pelayanan Klaster 2 dan 3" },
+    { day: "Rabu", time: "07.30 - 12.00 WIB", service: "Pelayanan Klaster 2 dan 3" },
+    { day: "Kamis", time: "07.30 - 12.00 WIB", service: "Pelayanan Klaster 2 dan 3" },
+    { day: "Jumat", time: "Tutup", service: "Petugas berkegiatan di puskesmas" },
+    { day: "Sabtu", time: "07.30 - 11.00 WIB", service: "Pelayanan Klaster 2 dan 3" },
     { day: "Minggu", time: "Tutup", service: "-" },
   ];
 
@@ -81,15 +86,6 @@ const Kontak = () => {
                   </div>
                 </div>
               ))}
-
-              <div className="pt-4">
-                <Button variant="hero" size="lg" className="w-full sm:w-auto" asChild>
-                  <a href={`https://wa.me/${branding.whatsapp}`} target="_blank" rel="noopener noreferrer">
-                    <Phone className="w-5 h-5" />
-                    Hubungi Sekarang melalui WA
-                  </a>
-                </Button>
-              </div>
 
             </div>
 
