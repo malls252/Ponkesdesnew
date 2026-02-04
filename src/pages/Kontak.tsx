@@ -23,7 +23,7 @@ const Kontak = () => {
   ];
 
   const schedule = [
-    { day: "Senin", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum" },
+    { day: "Senin", time: "07.30 - 16.00 WIB", service: "Pelayanan Umum" },
     { day: "Selasa", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum + KIA" },
     { day: "Rabu", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum" },
     { day: "Kamis", time: "08.00 - 16.00 WIB", service: "Pelayanan Umum + Imunisasi" },

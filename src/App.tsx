@@ -2,12 +2,13 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "@/components/Layout";
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Layanan from "./pages/Layanan";
 import Tentang from "./pages/Tentang";
-import SyaratBerkas from "./pages/SyaratBerkas";
+import Gallery from "./pages/Gallery";
 import Kontak from "./pages/Kontak";
 import NotFound from "./pages/NotFound";
 
@@ -18,17 +19,19 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/beranda" element={<Navigate to="/" replace />} />
           <Route path="/layanan" element={<Layout><Layanan /></Layout>} />
           <Route path="/tentang" element={<Layout><Tentang /></Layout>} />
-          <Route path="/syarat-berkas" element={<Layout><SyaratBerkas /></Layout>} />
+          <Route path="/gallery" element={<Layout><Gallery /></Layout>} />
           <Route path="/kontak" element={<Layout><Kontak /></Layout>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
