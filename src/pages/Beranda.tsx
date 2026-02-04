@@ -115,7 +115,7 @@ const Beranda = () => {
                 <div>
                   <h3 className="text-lg font-bold text-foreground mb-2">Alamat Kantor</h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Ds.Wiloso, Jl. Wiloso Gondowangi, RT.20/RW.04, Gondowangi, Kec. Wagir, Kabupaten Malang.
+                    Desa Wiloso, Jl. Wiloso Gondowangi, RT.20/RW.04, Gondowangi, Kec. Wagir, Kabupaten Malang.
                   </p>
                   <Button variant="outline" size="sm" className="h-9 gap-2" asChild>
                     <a
