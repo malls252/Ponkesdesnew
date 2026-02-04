@@ -6,6 +6,12 @@ export interface ScheduleItem {
     service: string;
 }
 
+const JSONBIN_CONFIG = {
+    BASE_URL: 'https://api.jsonbin.io/v3/b',
+    BIN_ID: 'REPLACE_WITH_YOUR_BIN_ID',
+    API_KEY: 'REPLACE_WITH_YOUR_API_KEY'
+};
+
 const DEFAULT_SCHEDULE: ScheduleItem[] = [
     { day: "Senin", time: "07.30 - 12.00 WIB", service: "Pelayanan Umum" },
     { day: "Selasa", time: "07.30 - 12.00 WIB", service: "Pelayanan Umum + KIA" },
