@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { supabase } from '@/lib/supabaseClient'
 import './Login.css'
 
@@ -40,7 +40,10 @@ export default function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1>Login Ponkesdes</h1>
+        <div className="logo-container">
+          <img src="/logo.jpg" alt="Ponkesdes Logo" className="logo" />
+        </div>
+        <h1>Selamat Datang di Login Admin</h1>
         
         {error && <div className="alert alert-error">{error}</div>}
 
@@ -72,6 +75,12 @@ export default function Login() {
           <button type="submit" disabled={loading} className="login-btn">
             {loading ? 'Loading...' : 'Login'}
           </button>
+
+          <div className="button-group">
+            <Link to="/" className="cancel-btn">
+              ← Kembali ke Beranda
+            </Link>
+          </div>
         </form>
       </div>
     </div>
